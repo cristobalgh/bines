@@ -3,7 +3,6 @@
 ```
 # apt-get update
 # apt-get install -y git
-# git clone https://github.com/orangepi-xunlong/wiringOP.git
 ```
  
  ### Orange Pi 4/4B/4 LTS
