@@ -35,3 +35,4 @@
  | GPIO | wPi |   Name   | Mode | V | Physical | V | Mode | Name     | wPi | GPIO |
  +------+-----+----------+------+---+OrangePi 4+---+---+--+----------+-----+------+
 ```
+hola
