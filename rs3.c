@@ -3,6 +3,9 @@
 #include <stdbool.h>
 #include <time.h>
 
+//la seleccion de pines es dado que parten apagados por defecto...
+//al menos hasta nuevo aviso de armbian...
+
 #define BOMBA1   2   // WiringPi pin bomba 1 (Agua) fisico 7
 #define BOMBA2   5   // WiringPi pin bomba 2 (AFS40) fisico 11
 #define VALV1    6   // WiringPi pin válvula 1 fisico 12
@@ -12,7 +15,7 @@
 
 #define PESO_POR_SEGUNDO 0.5 // kg/s (simulación tasa de llenado)
 #define TIEMPO_PULSO_MS 200  // tiempo para cada "simulación" paso
-#define TIEMPO_ESPERA_PULSO 5000 // ms, tiempo máximo para esperar pulso
+#define TIEMPO_ESPERA_PULSO 5000 // ms, tiempo máximo para esperar pulso flujo
 
 void apagarTodo() {
     digitalWrite(BOMBA1, LOW);
@@ -22,7 +25,7 @@ void apagarTodo() {
     printf("** TODO APAGADO POR ERROR **\n");
 }
 
-// Espera pulso en pinFlujo hasta 3 segundos. Retorna true si detecta pulso, false si timeout.
+// Espera pulso en pinFlujo hasta 5 segundos. Retorna true si detecta pulso, false si timeout.
 bool esperarPulsoConTimeout(int pinFlujo) {
     int estadoInicial = digitalRead(pinFlujo);
     printf("Esperando pulso en pin %d (máx %d ms)...\n", pinFlujo, TIEMPO_ESPERA_PULSO);
