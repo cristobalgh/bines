@@ -1,0 +1,16 @@
+    # Ignore specific files
+    .env
+    config.ini
+
+    # Ignore entire directories
+    node_modules/
+    build/
+    .local/
+    wiringOP/
+
+    # Ignore files by extension
+    *.log
+    *.tmp
+
+    # Ignore hidden files (starting with a dot)
+    .*
