@@ -18,8 +18,8 @@
 #define VALV2   	8
 #define BUFFER_SIZE 	512
 
-#define PORC_AGUA 0.625
-#define PORC_AFS40 0.375
+#define PORC_AGUA 0.375
+#define PORC_AFS40 0.625
 
 int serialFd;
 
