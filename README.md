@@ -1,5 +1,5 @@
 ## Mezclador de bines agua y AFS40
-qsa
+qsa   
 ```
 # apt-get update
 # apt-get install -y git
