@@ -15,7 +15,7 @@
 
 #define PESO_POR_SEGUNDO 0.5 // kg/s (simulación tasa de llenado)
 #define TIEMPO_PULSO_MS 200  // tiempo para cada "simulación" paso
-#define TIEMPO_ESPERA_PULSO 5000 // ms, tiempo máximo para esperar pulso flujo
+#define TIEMPO_ESPERA_PULSO 10000 // ms, tiempo máximo para esperar pulso flujo
 
 void apagarTodo() {
     digitalWrite(BOMBA1, LOW);
@@ -25,7 +25,7 @@ void apagarTodo() {
     printf("** TODO APAGADO POR ERROR **\n");
 }
 
-// Espera pulso en pinFlujo hasta 5 segundos. Retorna true si detecta pulso, false si timeout.
+// Espera pulso en pinFlujo hasta n segundos. Retorna true si detecta pulso, false si timeout.
 bool esperarPulsoConTimeout(int pinFlujo) {
     int estadoInicial = digitalRead(pinFlujo);
     printf("Esperando pulso en pin %d (máx %d ms)...\n", pinFlujo, TIEMPO_ESPERA_PULSO);
