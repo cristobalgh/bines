@@ -1,12 +1,5 @@
-## Mezclador de bines agua y AFS40
-qsa jeje
-```
-# apt-get update
-# apt-get install -y git
-```
- 
+ ### Mezclador de bines agua y AFS40 en opi4 qsa
  ### Orange Pi 4/4B/4 LTS
-
  ```
  +------+-----+----------+------+---+OrangePi 4+---+---+--+----------+-----+------+
  | GPIO | wPi |   Name   | Mode | V | Physical | V | Mode | Name     | wPi | GPIO |
@@ -35,5 +28,5 @@ qsa jeje
  | GPIO | wPi |   Name   | Mode | V | Physical | V | Mode | Name     | wPi | GPIO |
  +------+-----+----------+------+---+OrangePi 4+---+---+--+----------+-----+------+
 ```
-hola
-chao
+21.8.2025
+cgh kuyr
