@@ -78,7 +78,7 @@ static Config cfg = {
     .pesoMax                = 2000.0f,
     .toleranciaKg           = 0.5f,
 
-    .serialPuerto           = "/dev/ttyUSB0",
+    .serialPuerto           = "/dev/balanza",
     .serialBaud             = B9600,
     .serialSleepUs          = 1000,
     .serialMaxIntentos      = 5000,
